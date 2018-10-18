@@ -42,6 +42,6 @@ public class Test_Login {
 		driver = browsermanager.navigateToURL();
 		
 		homePage = new HomePage(driver);
-		homePage.fun_login("mercury","mercury");
+		homePage.fun_login("shivanand","mercury");
 	}
 }

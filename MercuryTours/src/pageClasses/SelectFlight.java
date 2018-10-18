@@ -16,5 +16,7 @@ public class SelectFlight {
 	public void selectFlights() {
 		driver.findElement(By.xpath("//input[@value='Blue Skies Airlines$361$271$7:10']")).click();	
 		driver.findElement(By.xpath("//input[@name='reserveFlights']")).click();
+		
+		System.out.println("Error is new");
 	}
 }

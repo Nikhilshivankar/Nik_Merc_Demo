@@ -12,7 +12,7 @@ public class Test_Login {
 	HomePage homePage;
 	
 	
-	@Test
+	@Test(groups = "testLogin" )
 	public void test_login() {
 		
 		browsermanager = new BrowserManager(driver);	
@@ -21,9 +21,10 @@ public class Test_Login {
 		
 		homePage = new HomePage(driver);
 		homePage.fun_login("mercury","mercury");
+		driver.close();
 	}
 	
-	@Test
+	@Test(groups = "testLogin" )
 	public void test_login1() {
 		
 		browsermanager = new BrowserManager(driver);	
@@ -32,9 +33,10 @@ public class Test_Login {
 		
 		homePage = new HomePage(driver);
 		homePage.fun_login("mercury","mercury");
+		driver.close();
 	}
 	
-	@Test
+	@Test(groups = "testLogin" )
 	public void test_login2() {
 		
 		browsermanager = new BrowserManager(driver);	
@@ -43,5 +45,6 @@ public class Test_Login {
 		
 		homePage = new HomePage(driver);
 		homePage.fun_login("shivanand","mercury");
+		driver.close();
 	}
 }

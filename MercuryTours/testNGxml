@@ -4,6 +4,9 @@
 	<groups>
          <run>
             <include name = "testLogin" />
+            <include name = "smoke" />
+            <include name = "regression" />
+            <include name = "golden TC" />
          </run>
       </groups>
 		<classes>

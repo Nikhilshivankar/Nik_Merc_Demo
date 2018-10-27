@@ -1,9 +1,17 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite parallel="false" name="Suite">
-  <test name="Test">
-    <classes>
-      <class name="test.Test_LoginTest"/>
-      <class name="test.TestRunner"/>
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+	<test name="Test">
+		<groups>
+			<run>
+				<include name="testlogin" />
+				<include name="smoke" />
+				<include name="regression" />
+				<include name="golden TC" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test.Test_LoginTest" />
+			<class name="test.TestRunner" />
+		</classes>
+	</test>
+</suite>
